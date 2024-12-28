@@ -13,9 +13,17 @@ A Flask application to track eco-friendly actions by tourists and reward them wi
 - Frontend: HTML, CSS
 
 ## Setup
-1. Clone the repository.
+1. Clone the repository:
+```
+git clone https://github.com/your-username/eco-friendly-tourism-tracker.git
+cd eco-friendly-tourism-tracker
+```
 2. Install dependencies:
-### Then do: pip install -r requirements.txt
+```
+pip install -r requirements.txt
+
+```
+
 3. In js file 
 ``` js
 Set up MySQL:
