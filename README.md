@@ -13,33 +13,50 @@ A Flask application to track eco-friendly actions by tourists and reward them wi
 - Frontend: HTML, CSS
 
 ## Setup
+
+### Prerequisites
+- Python 3.6+
+- MySQL
+
+### Installation
+
 1. Clone the repository:
-```
-git clone https://github.com/your-username/eco-friendly-tourism-tracker.git
-cd eco-friendly-tourism-tracker
-```
+    ```bash
+    git clone https://github.com/your-username/eco-friendly-tourism-tracker.git
+    cd eco-friendly-tourism-tracker
+    ```
+
 2. Install dependencies:
-```
-pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-```
+3. Set up MySQL:
+    ```sql
+    CREATE DATABASE eco_friendly;
+    ```
 
-3. In js file 
-``` js
-Set up MySQL:
-```
-
-### Then create a db using:
-```sql
-CREATE DATABASE eco_friendly;
-```
 4. Initialize the database:
+    ```bash
+    flask db init
+    flask db migrate -m "Initial migration"
+    flask db upgrade
+    ```
 
-### In the in the terminal run:
-```python
-flask db init flask db migrate -m "Initial migration" flask db upgrade
-```
-### Run the app file using the following command on terminal:
-```
-run app.py
-```
+5. Run the application:
+    ```bash
+    python app.py
+    ```
+
+## Usage
+- Open your web browser and go to `http://127.0.0.1:5000/` to access the application.
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
